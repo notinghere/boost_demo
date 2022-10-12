@@ -10,6 +10,8 @@ MESSAGE(STATUS, "CMAKE_CXX_FLAGS = ${CMAKE_CXX_FLAGS}")
 
 set(CMAKE_C_FLAGS "-ffunction-sections -Wall -maes -msse2 -msse4.1 -mpclmul -Wfatal-errors -pthread -fPIC -Wno-ignored-attributes")
 
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${CMAKE_C_FLAGS}")
+
 # Set build type
 if (NOT CMAKE_CONFIGURATION_TYPES AND NOT CMAKE_BUILD_TYPE)
     set(CMAKE_BUILD_TYPE Release)
@@ -39,5 +41,6 @@ ELSE()
     MESSAGE(STATUS, "BOOST NOT FOUND")
 ENDIF()
 
-add_subdirectory(./demo1)
-add_subdirectory(./config_test)
+#add_subdirectory(./demo1)
+#add_subdirectory(./config_test)
+add_subdirectory(./timer_test)
