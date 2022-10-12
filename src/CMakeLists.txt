@@ -41,6 +41,6 @@ ELSE()
     MESSAGE(STATUS, "BOOST NOT FOUND")
 ENDIF()
 
-#add_subdirectory(./demo1)
-#add_subdirectory(./config_test)
+add_subdirectory(./demo1)
+add_subdirectory(./config_test)
 add_subdirectory(./timer_test)
