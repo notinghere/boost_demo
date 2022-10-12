@@ -50,7 +50,6 @@ void cancel_timer()
     io.run();
 }
 
-
 typedef std::function<void(const boost::system::error_code&)> timer_callback;
 
 void change_timer()
