@@ -40,3 +40,4 @@ ELSE()
 ENDIF()
 
 add_subdirectory(./demo1)
+add_subdirectory(./config_test)
